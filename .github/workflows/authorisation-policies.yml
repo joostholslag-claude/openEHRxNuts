@@ -31,7 +31,7 @@ jobs:
     name: opa fmt, check and test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: open-policy-agent/setup-opa@v2
         with:
@@ -51,7 +51,7 @@ jobs:
     name: validate datasource against JSON Schema
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: check-jsonschema
         run: |
